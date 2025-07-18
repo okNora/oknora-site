@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>oknora.com</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="site-title">oknora.com</div>
+
+  <div class="folders">
+    <div class="folder" onclick="openPopup('popup1')">📁 The Story</div>
+    <div class="folder" onclick="openPopup('popup2')">📁 Music Archive</div>
+    <div class="folder" onclick="openPopup('popup3')">📁 Notes to Self</div>
+  </div>
+
+  <!-- POPUPS -->
+  <div class="popup" id="popup1">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup1')">&times;</span>
+      <p>This is your story section. Add whatever you want here.</p>
+    </div>
+  </div>
+
+  <div class="popup" id="popup2">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup2')">&times;</span>
+      <p>Here’s where you could put links to your music or SoundCloud.</p>
+    </div>
+  </div>
+
+  <div class="popup" id="popup3">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup3')">&times;</span>
+      <p>Your personal thoughts, journal entries, poems, or images can go here.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
